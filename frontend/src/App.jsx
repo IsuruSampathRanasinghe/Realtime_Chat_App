@@ -29,7 +29,7 @@ const App = () => {
   )
 
   return (
-    <div>
+    <div data-theme="retro">
 
       <Navbar />
 
@@ -41,7 +41,7 @@ const App = () => {
         <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
       </Routes>
 
-      <Toaster />
+      <Toaster /> 
 
     </div>
   );
