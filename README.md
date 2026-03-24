@@ -182,7 +182,7 @@ Create a `.env` file in the `backend` directory:
 
 ```env
 # Database
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/realtime-chat
+MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
 
 # Server
 PORT=5001
@@ -196,6 +196,8 @@ CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 ```
+
+> ⚠️ Do not commit real credentials. Keep this file in `.gitignore` and regenerate/rotate any exposed secrets immediately.
 
 ### Frontend Configuration
 
